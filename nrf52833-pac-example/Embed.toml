@@ -1,0 +1,30 @@
+[default.general]
+chip = "nRF52833_xxAA"
+
+[default.probe]
+usb_vid = "0d28"                                            # USB vendor ID
+usb_pid = "0204"                                            # USB product ID
+serial = "99063602000528205E5CA49EA62EFBB5000000006E052820" # Serial number
+protocol = "Swd"                                            # The protocol to be used for communicating with the target.
+speed = 1337
+
+[default.rtt]
+enabled = false
+
+[default.gdb]
+enabled = true
+
+# arm-none-eabi-gdb target/thumbv7em-none-eabihf/debug/nrf52833-pac-example
+# target remote :1337
+
+# info registers
+# info locals
+
+# set print asm-demangle on
+# disassemble
+
+# break main.rs:13
+# stepi
+
+[default.reset]
+halt_afterwards = true
